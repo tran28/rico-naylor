@@ -18,7 +18,7 @@ export default function Home() {
           <Layout className='pt-0'>
             <div className='flex items-center justify-between w-full gap-24'>
               <div className='w-1/2'>
-                <AnimatedImage src={HeroContent.image} alt='Rico Naylor' className='w-full h-auto rounded-xl shadow-xl'></AnimatedImage>
+                <AnimatedImage src='https://storage.googleapis.com/riconaylor-website-bucket/rico-naylor-pfp.png' alt='Rico Naylor' className='w-full h-auto rounded-xl shadow-xl'></AnimatedImage>
               </div>
               <div className='w-1/2 flex flex-col items-center self-center gap-6'>
                 <AnimatedText text={HeroContent.heading} className='text-6xl' />
