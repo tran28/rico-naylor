@@ -9,7 +9,7 @@ const FooterLink = ({ href, title, className, selectedColor }) => {
     return (
         <Link href={href} className={`${className} relative py-0.5 group`}>
             {title}
-            <span className={`h-[1px] rounded inline-block w-0 ${selectedColor} absolute left-0 bottom-0 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === href ? 'w-full' : 'w-0'}`}>&nbsp;</span>
+            <span className={`h-[2px] rounded inline-block w-0 ${selectedColor} absolute left-0 bottom-0 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === href ? 'w-full' : 'w-0'}`}>&nbsp;</span>
         </Link>
     )
 }

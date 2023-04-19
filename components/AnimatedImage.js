@@ -23,7 +23,7 @@ const AnimatedImage = ({ src, alt, className }) => {
             initial='hidden'
             animate='show'
         >
-            <Image src={src} alt={alt} width="0" height="0" sizes="100vw" className={className}></Image>
+            <Image src={src} alt={alt} width="0" height="0" sizes="100vw" priority className={className}></Image>
         </motion.div>
     )
 };

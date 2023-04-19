@@ -29,7 +29,7 @@ const pathVariants = {
 const Logo = () => {
     return (
         <motion.svg
-            className='h-auto w-40'
+            className='h-auto w-40 cursor-pointer outline-0'
             id="Layer_1"
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +37,7 @@ const Logo = () => {
             variants={svgVariants}
             initial='hidden'
             animate='visible'
-            whileHover={{ translateX: 5, rotate: -5 }}
+            whileTap={{ scale: 0.9 }}
         >
             <motion.path
                 fill='none'

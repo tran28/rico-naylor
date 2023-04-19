@@ -22,7 +22,7 @@ const NavBar = () => {
                 <CustomLink href='/' title='Home' className='mr-4' selectedColor='bg-violet-700' />
                 <CustomLink href='/podcast' title='Podcast' className='mx-4' selectedColor='bg-red-700' />
                 <CustomLink href='/about' title='About' className='mx-4' selectedColor='bg-green-700' />
-                <CustomLink href='/contact' title='Contact' className='ml-4' selectedColor='bg-dark_brown' />
+                <CustomLink href='/contact' title='Contact' className='ml-4' selectedColor='bg-orange-700' />
             </nav>
 
             <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
