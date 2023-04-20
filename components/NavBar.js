@@ -1,9 +1,34 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import { cormorant } from "@/public/myfonts";
+import { bebas_neue } from "@/public/myfonts";
 import { BrandLinkedin, Mail } from "tabler-icons-react";
 import { motion } from "framer-motion";
+
+const NavMenu = {
+    items: [
+        {
+            title: 'Home',
+            href: '/',
+            selectedColor: 'bg-violet-600'
+        },
+        {
+            title: 'Podcast',
+            href: '/podcast',
+            selectedColor: 'bg-red-600'
+        },
+        {
+            title: 'About',
+            href: '/about',
+            selectedColor: 'bg-green-600'
+        },
+        {
+            title: 'Contact',
+            href: '/contact',
+            selectedColor: 'bg-orange-600'
+        }
+    ]
+}
 
 const CustomLink = ({ href, title, className, selectedColor }) => {
     const router = useRouter()
@@ -17,16 +42,16 @@ const CustomLink = ({ href, title, className, selectedColor }) => {
 
 const NavBar = () => {
     return (
-        <header className={`${cormorant.variable} font-cormorant w-full px-32 py-8 font-semibold text-xl flex items-center justify-between`}>
+        <header className={`${bebas_neue.variable} font-bebas w-full px-32 py-12 text-xl flex items-center justify-between`}>
             <nav>
-                <CustomLink href='/' title='Home' className='mr-4' selectedColor='bg-violet-700' />
-                <CustomLink href='/podcast' title='Podcast' className='mx-4' selectedColor='bg-red-700' />
-                <CustomLink href='/about' title='About' className='mx-4' selectedColor='bg-green-700' />
-                <CustomLink href='/contact' title='Contact' className='ml-4' selectedColor='bg-orange-700' />
+                {NavMenu.items.map((item, index) => {
+                    return (
+                        <CustomLink key={`${item}-${index}`} href={item.href} title={item.title} className='mx-4' selectedColor={item.selectedColor} />
+                    )
+                })}
             </nav>
-
-            <div className='absolute left-[50%] top-2 translate-x-[-50%]'>
-                <Logo />
+            <div className='absolute left-[50%] top-6 translate-x-[-50%]'>
+                <Logo colour={'#121212'} />
             </div>
 
             <nav className='flex items-center justify-center flex-wrap'>

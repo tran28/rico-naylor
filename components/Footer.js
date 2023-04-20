@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
-import Layout from "./Layout";
 import Link from "next/link";
-import { cormorant } from "@/public/myfonts";
+import { bebas_neue } from "@/public/myfonts";
 
 
 const FooterLink = ({ href, title, className, selectedColor }) => {
@@ -16,12 +15,12 @@ const FooterLink = ({ href, title, className, selectedColor }) => {
 
 const Footer = () => {
     return (
-        <footer className={`${cormorant.variable} font-cormorant w-full px-32 py-8 text-base flex items-center justify-between border border-t-dark`}>
-            <span>© 2023 All Rights Reserved.</span>
+        <footer className={`${bebas_neue.variable} font-bebas w-full px-32 py-8 text-base flex items-center justify-between border-t-[1px] border-dark`}>
+            <span>© 2023 Rico & Assoc. All Rights Reserved.</span>
             <div>
                 <nav>
-                    <FooterLink href='/terms' title='Terms of Use' className='mr-4' selectedColor='bg-black' />
-                    <FooterLink href='/privacy' title='Privacy Policy' className='mx-4' selectedColor='bg-black' />
+                    <FooterLink href='/terms' title='Terms of Use' className='mx-4' selectedColor='bg-white' />
+                    <FooterLink href='/privacy' title='Privacy Policy' className='mx-4' selectedColor='bg-white' />
                 </nav>
             </div>
         </footer>

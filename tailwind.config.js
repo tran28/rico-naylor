@@ -16,11 +16,11 @@ module.exports = {
         nunito: ['var(--font-nunito)', ...fontFamily.sans]
       },
       colors: {
-        dark: '#191919',
-        light: '#F1F1F1',
-        light_brown: '#8F6E5D',
-        dark_brown: '#60574A',
-        accent_green: '#95A991'
+        dark: '#121212',
+        light: '#FFFFFF',
+        secondary_light: '#F1F1F1',
+        accent_green: '#95A991',
+        accent_red: '#F3254E'
       }
     },
   },
