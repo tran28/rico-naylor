@@ -51,7 +51,7 @@ const NavBar = () => {
                 })}
             </nav>
             <div className='absolute left-[50%] top-6 translate-x-[-50%]'>
-                <Logo colour={'#121212'} />
+                <Logo />
             </div>
 
             <nav className='flex items-center justify-center flex-wrap'>

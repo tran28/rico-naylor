@@ -19,7 +19,7 @@ export default function About() {
                     <Layout>
                         <div className='grid w-full grid-cols-8 gap-24'>
                             <div className='col-span-5 flex flex-col items-start justify-start'>
-                                <h1 className={`${bebas_neue.variable} font-bebas mb-4 text-6xl font-bold uppercase text-dark`}>Your <span className='text-purple-700'>Real Estate Partner</span></h1>
+                                <h1 className={`${bebas_neue.variable} font-bebas mb-4 text-6xl font-bold uppercase`}>Your <span className='text-purple-700'>Real Estate Partner</span></h1>
                                 {AboutContent.text.map((paragraph, index) => {
                                     return (
                                         <p key={`${paragraph}-${index}`} className='font-medium my-2'>{paragraph}</p>

@@ -31,7 +31,7 @@ export default function Home() {
         </Container>
       </main>
       <FadeInWhenVisible>
-        <main className='flex items-center justify-center w-full min-h-screen bg-secondary_light'>
+        <main className='flex items-center justify-center w-full min-h-[calc(100vh-100px)] bg-secondary_light'>
           <Container>
             <Layout>
               <div className='flex items-center justify-between w-full gap-24'>
