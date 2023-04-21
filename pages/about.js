@@ -6,6 +6,7 @@ import { AboutContent } from "@/content/aboutContent";
 import Container from "@/components/Container";
 import Image from "next/image";
 import Experience from "@/components/Experience";
+import AnimatedImage from "@/components/AnimatedImage";
 
 export default function About() {
     return (
@@ -28,7 +29,7 @@ export default function About() {
                                 }
                             </div>
                             <div className='col-span-3 relative h-max'>
-                                <Image src={AboutContent.image} alt='Rico Naylor' width="0" height="0" sizes="100vw" className='w-full h-auto rounded-full shadow-md shadow-purple-700/60'></Image>
+                                <AnimatedImage src={AboutContent.image} alt='Rico Naylor' className='w-full h-auto rounded-full shadow-md shadow-purple-700/60'></AnimatedImage>
                             </div>
                         </div>
                         <Experience />
