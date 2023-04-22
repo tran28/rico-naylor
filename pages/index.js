@@ -20,7 +20,7 @@ export default function Home() {
           <Layout>
             <div className='flex items-center justify-between w-full gap-24'>
               <div className='w-1/2'>
-                <AnimatedImage src={HeroContent.image} alt='Rico Naylor' className='w-full h-auto rounded-xl shadow-xl' from='left'></AnimatedImage>
+                <AnimatedImage src={HeroContent.image} alt='Rico Naylor' className='w-full h-auto rounded-xl shadow-xl' direction='-100'></AnimatedImage>
               </div>
               <div className='w-1/2 flex flex-col items-center self-center gap-6'>
                 <AnimatedText text={HeroContent.heading} className='text-6xl' />

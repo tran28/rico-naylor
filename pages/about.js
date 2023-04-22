@@ -29,7 +29,7 @@ export default function About() {
                                 }
                             </div>
                             <div className='col-span-3 relative h-max'>
-                                <AnimatedImage src={AboutContent.image} alt='Rico Naylor' className='w-full h-auto rounded-full shadow-md shadow-purple-700/60'></AnimatedImage>
+                                <AnimatedImage src={AboutContent.image} alt='Rico Naylor' className='w-full h-auto rounded-full shadow-md shadow-purple-700/60' direction='100'></AnimatedImage>
                             </div>
                         </div>
                         <Experience />
