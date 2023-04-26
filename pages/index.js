@@ -5,7 +5,6 @@ import AnimatedImage from "@/components/AnimatedImage";
 import Container from "@/components/Container";
 import { HeroContent } from "../content/homeContent"
 import { FadeInWhenVisible } from "@/components/ScrollAnimations";
-import { ScrollLinkedAnimation } from "@/components/ScrollAnimations";
 
 export default function Home() {
   return (
@@ -14,7 +13,6 @@ export default function Home() {
         <title>Rico Naylor</title>
         <meta name='description' content='All things real estate with Rico Naylor. Real estate with Rico Naylor podcast.' />
       </Head>
-      <ScrollLinkedAnimation />
       <main className='flex items-center justify-center w-full min-h-[calc(100vh-140px)]'>
         <Container>
           <Layout>
