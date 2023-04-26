@@ -10,22 +10,22 @@ const NavMenu = {
         {
             title: 'Home',
             href: '/',
-            selectedColor: 'bg-violet-600'
+            selectedColor: 'bg-purple-700'
         },
         {
             title: 'Podcast',
             href: '/podcast',
-            selectedColor: 'bg-red-600'
+            selectedColor: 'bg-purple-700'
         },
         {
             title: 'About',
             href: '/about',
-            selectedColor: 'bg-green-600'
+            selectedColor: 'bg-purple-700'
         },
         {
             title: 'Contact',
             href: '/contact',
-            selectedColor: 'bg-orange-600'
+            selectedColor: 'bg-purple-700'
         }
     ]
 }

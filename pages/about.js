@@ -7,6 +7,7 @@ import Container from "@/components/Container";
 import Image from "next/image";
 import Experience from "@/components/Experience";
 import AnimatedImage from "@/components/AnimatedImage";
+import Education from "@/components/Education";
 
 export default function About() {
     return (
@@ -46,7 +47,7 @@ export default function About() {
             <main className='flex w-full flex-col justify-center items-center'>
                 <Container>
                     <Layout>
-                        <Experience />
+                        <Education />
                     </Layout>
                 </Container>
             </main>

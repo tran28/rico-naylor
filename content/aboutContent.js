@@ -67,3 +67,28 @@ export const ExperienceContent = {
         }
     ]
 }
+
+export const EducationContent = {
+    education: [
+        {
+            certification: 'Degree X',
+            institution: 'University Y',
+            time: '20xx-20xx',
+            location: 'Manchester, UK',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, \
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris \
+            nisi ut aliquip ex ea commodo consequat.'
+        },
+        {
+            certification: 'Certificate Z',
+            institution: 'LinkedIn Learning',
+            time: '20xx-20xx',
+            location: 'Manchester, UK',
+            info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, \
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris \
+            nisi ut aliquip ex ea commodo consequat.'
+        },
+    ]
+}
