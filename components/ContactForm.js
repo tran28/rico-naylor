@@ -63,21 +63,21 @@ export default function ContactForm() {
             <label htmlFor="fullname" className="text-gray-500 font-light mt-8">
                 Full name<span className="text-purple-700 ml-1">*</span>
             </label>
-            
-            <input type="text" value={fullname} onChange={(e) => { setFullname(e.target.value); }} name="fullname" className="bg-transparent border-b py-2 focus:outline-none focus:border-b-purple-700 text-purple-700" />
+
+            <input type="text" value={fullname} onChange={(e) => { setFullname(e.target.value); }} name="fullname" className="bg-transparent border-b py-2 focus:outline-none focus:border-b-purple-700 text-[#130F49]" />
 
             <label htmlFor="email" className="text-gray-500 font-light mt-4">E-mail</label>
-            <input type="email" name="email" value={email} onChange={(e) => { setEmail(e.target.value); }} className="bg-transparent border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-purple-700" />
+            <input type="email" name="email" value={email} onChange={(e) => { setEmail(e.target.value); }} className="bg-transparent border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49]" />
 
             <label htmlFor="subject" className="text-gray-500 font-light mt-4">
                 Subject<span className="text-purple-700 ml-1">*</span>
             </label>
-            <input type="text" name="subject" value={subject} onChange={(e) => { setSubject(e.target.value); }} className="bg-transparent border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-purple-700" />
+            <input type="text" name="subject" value={subject} onChange={(e) => { setSubject(e.target.value); }} className="bg-transparent border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49]" />
 
             <label htmlFor="message" className="text-gray-500 font-light mt-4">
                 Message<span className="text-purple-700 ml-1">*</span>
             </label>
-            <textarea name="message" value={message} onChange={(e) => { setMessage(e.target.value); }} className="bg-transparent border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-purple-700"></textarea>
+            <textarea name="message" value={message} onChange={(e) => { setMessage(e.target.value); }} className="bg-transparent border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49]"></textarea>
 
             <div className="flex flex-row items-center justify-start">
                 <button type="submit" disabled={disable} className={`px-10 ${bttnBg} mt-8 py-2 text-gray-50 font-light rounded-md text-lg flex flex-row items-center`}>{buttonText}</button>
