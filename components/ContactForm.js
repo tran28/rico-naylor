@@ -13,7 +13,7 @@ export default function ContactForm() {
     // Setting button text on form submission
     const [buttonText, setButtonText] = useState("Send")
     const [disable, setDisable] = useState(false)
-    const [bttnBg, setBttnBg] = useState('bg-[#130F49]')
+    const [bttnBg, setBttnBg] = useState('bg-purple-700')
 
     // Validation check method
     const handleValidation = () => {
@@ -56,11 +56,11 @@ export default function ContactForm() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="rounded-l-lg shadow-xl flex flex-col px-8 py-8 bg-secondary_light min-w-[800px]">
-            <h1 className="text-2xl font-bold">Send a message</h1>
+        <form onSubmit={handleSubmit} className="rounded-lg shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] flex flex-col px-8 py-8 min-w-[800px]">
+            <h1 className="text-2xl font-bold text-purple-700">Send a message</h1>
 
             <label htmlFor="fullname" className="text-gray-500 font-light mt-8">
-                Full name<span className="text-purple-700 ml-1">*</span>
+                Full name<span className="text-[#130F49] ml-1">*</span>
             </label>
 
             <input type="text" value={fullname} onChange={(e) => { setFullname(e.target.value); }} name="fullname" className="bg-transparent border-b py-2 focus:outline-none focus:border-b-purple-700 text-[#130F49]" />
@@ -69,12 +69,12 @@ export default function ContactForm() {
             <input type="email" name="email" value={email} onChange={(e) => { setEmail(e.target.value); }} className="bg-transparent border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49]" />
 
             <label htmlFor="subject" className="text-gray-500 font-light mt-4">
-                Subject<span className="text-purple-700 ml-1">*</span>
+                Subject<span className="text-[#130F49] ml-1">*</span>
             </label>
             <input type="text" name="subject" value={subject} onChange={(e) => { setSubject(e.target.value); }} className="bg-transparent border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49]" />
 
             <label htmlFor="message" className="text-gray-500 font-light mt-4">
-                Message<span className="text-purple-700 ml-1">*</span>
+                Message<span className="text-[#130F49] ml-1">*</span>
             </label>
             <textarea name="message" value={message} onChange={(e) => { setMessage(e.target.value); }} className="bg-transparent border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49]"></textarea>
 

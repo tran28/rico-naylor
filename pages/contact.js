@@ -1,4 +1,3 @@
-import AnimatedText from "@/components/AnimatedText";
 import ContactForm from "@/components/ContactForm";
 import Container from "@/components/Container";
 import Layout from "@/components/Layout";
@@ -12,7 +11,7 @@ export default function Contact() {
                 <meta name='description' content='Rico Naylor contact form for feedback, partnerships, sponsors, and general enquiries.' />
             </Head>
             <main className='flex items-center justify-center'>
-                <Container>
+                <Container >
                     <Layout>
                         <ContactForm />
                     </Layout>
