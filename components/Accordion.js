@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import {
     Accordion,
     AccordionHeader,
@@ -29,9 +29,9 @@ export default function AnimatedAccordion() {
     };
 
     return (
-        <Fragment>
+        <>
             <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
-                <AccordionHeader onClick={() => handleOpen(1)} className='text-xl text-purple-700 font-bold'>
+                <AccordionHeader onClick={() => handleOpen(1)} className='text-2xl text-purple-700 font-semibold'>
                     Commercial Awareness
                 </AccordionHeader>
                 <AccordionBody className='pt-8'>
@@ -42,7 +42,7 @@ export default function AnimatedAccordion() {
                 </AccordionBody>
             </Accordion>
             <Accordion open={open === 2} icon={<Icon id={2} open={open} />}>
-                <AccordionHeader onClick={() => handleOpen(2)} className='text-xl text-purple-700 font-bold'>
+                <AccordionHeader onClick={() => handleOpen(2)} className='text-2xl text-purple-700 font-semibold'>
                     Career Development
                 </AccordionHeader>
                 <AccordionBody className='pt-8'>
@@ -52,7 +52,7 @@ export default function AnimatedAccordion() {
                 </AccordionBody>
             </Accordion>
             <Accordion open={open === 3} icon={<Icon id={3} open={open} />}>
-                <AccordionHeader onClick={() => handleOpen(3)} className='text-xl text-purple-700 font-bold'>
+                <AccordionHeader onClick={() => handleOpen(3)} className='text-2xl text-purple-700 font-semibold'>
                     Diversity, Equity & Inclusion (DEI)
                 </AccordionHeader>
                 <AccordionBody className='pt-8'>
@@ -62,6 +62,6 @@ export default function AnimatedAccordion() {
                     Here I strive to demystify DEI by bridging the gap through education and thought leadership from diverse champions.
                 </AccordionBody>
             </Accordion>
-        </Fragment>
+        </>
     );
 }
