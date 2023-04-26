@@ -5,6 +5,7 @@ import AnimatedImage from "@/components/AnimatedImage";
 import Container from "@/components/Container";
 import { HeroContent } from "../content/homeContent"
 import { FadeInWhenVisible } from "@/components/ScrollAnimations";
+import AnimatedAccordion from "@/components/Accordion";
 
 export default function Home() {
   return (
@@ -22,29 +23,22 @@ export default function Home() {
               </div>
               <div className='w-1/2 flex flex-col items-center self-center gap-6'>
                 <AnimatedText text={HeroContent.heading} className='text-6xl' />
-                <p className='text-lg'>{HeroContent.text}</p>
+                {HeroContent.text.map((paragraph, index) => {
+                  return (
+                    <p key={`${paragraph}-${index}`} className='text-md'>{paragraph}</p>
+                  )
+                })}
               </div>
             </div>
           </Layout>
         </Container>
       </main>
       <FadeInWhenVisible>
-        <main className='flex items-center justify-center w-full min-h-[calc(100vh-100px)] bg-secondary_light'>
+        <main className='flex items-center justify-center w-full bg-secondary_light'>
           <Container>
             <Layout>
-              <div className='flex items-center justify-between w-full gap-24'>
-                <div className='w-1/3 flex flex-col items-center self-center gap-6'>
-                  <AnimatedText text='Episode 1' className='text-4xl' />
-                  <p className='text-lg'>{HeroContent.text}</p>
-                </div>
-                <div className='w-1/3 flex flex-col items-center self-center gap-6'>
-                  <AnimatedText text='Episode 2' className='text-4xl' />
-                  <p className='text-lg'>{HeroContent.text}</p>
-                </div>
-                <div className='w-1/3 flex flex-col items-center self-center gap-6'>
-                  <AnimatedText text='Coming Soon' className='text-4xl' />
-                  <p className='text-lg'>{HeroContent.text}</p>
-                </div>
+              <div className='flex flex-col items-center justify-center w-full gap-12'>
+                <AnimatedAccordion />
               </div>
             </Layout>
           </Container>

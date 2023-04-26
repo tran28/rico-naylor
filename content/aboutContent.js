@@ -1,9 +1,9 @@
 export const AboutContent = {
     tagline: 'Tagline here',
     text: [
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+        "Meet Rico, a passionate graduate surveyor who brings a fresh and inclusive perspective to property.",
+        "As a graduate surveyor, he honed his skills in commercial awareness, career development, and diversity, equity, and inclusion (DEI) – the three cornerstones of his podcast, 'Real Estate with Rico'.",
+        "His journey as a gay person of colour from a socially mobile background has granted him a unique understanding of the industry's challenges and opportunities. He believes that a diverse and inclusive approach to real estate can drive meaningful change, foster growth, and create lasting value for individuals and businesses alike.",
     ],
     image: 'https://storage.googleapis.com/riconaylor-website-bucket/rico-naylor-pfp.png'
 }
