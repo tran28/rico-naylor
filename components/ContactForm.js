@@ -98,10 +98,10 @@ export default function ContactForm() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className='rounded-lg shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] pb-8 w-[400px]'>
+        <form onSubmit={handleSubmit} className='rounded-lg shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] w-[400px]'>
             <h1 className='text-2xl font-bold bg-purple-700 py-8 px-8 rounded-t-lg text-light'>Send a message</h1>
-            <div className="flex px-8 flex-col">
-                <label htmlFor="fullname" className="text-gray-500 font-light mt-8">
+            <div className="flex px-8 py-8 flex-col">
+                <label htmlFor="fullname" className="text-gray-500 font-light">
                     Full name<span className="text-[#130F49] ml-1">*</span>
                 </label>
                 <input type="text" value={fullname} onChange={(e) => { setFullname(e.target.value); }} name="fullname" className="bg-transparent border-b py-2 focus:outline-none focus:border-b-purple-700 text-[#130F49]" />
