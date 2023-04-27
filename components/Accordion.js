@@ -34,7 +34,7 @@ export default function AnimatedAccordion() {
                 <AccordionHeader onClick={() => handleOpen(1)} className='text-xl text-purple-700 font-semibold'>
                     Commercial Awareness
                 </AccordionHeader>
-                <AccordionBody className='pt-8 text-md'>
+                <AccordionBody className='pt-4 text-md'>
                     Over the last three years alone, we have endured a global pandemic, a cost of living crisis, a climate change crisis, the effects of the war, political controversy, and ongoing economic uncertainty.
                     All such factors significantly impact real estate; from property values to investor sentiment, there is much to discuss.
                     Within commercial awareness, I speak with experts to discuss the implications and possible effects at play across various markets.
@@ -45,7 +45,7 @@ export default function AnimatedAccordion() {
                 <AccordionHeader onClick={() => handleOpen(2)} className='text-xl text-purple-700 font-semibold'>
                     Career Development
                 </AccordionHeader>
-                <AccordionBody className='pt-8 text-md'>
+                <AccordionBody className='pt-4 text-md'>
                     Real estate boasts fantastic opportunities.
                     As a graduate surveyor, I am early in my journey and passionate about nurturing a solid relationship network and developing my career.
                     Here I discuss with senior experts what skills, attitudes, and advice can be leveraged to excel within the industry and hear more about the career journeys of others.
@@ -55,7 +55,7 @@ export default function AnimatedAccordion() {
                 <AccordionHeader onClick={() => handleOpen(3)} className='text-xl text-purple-700 font-semibold'>
                     Diversity, Equity & Inclusion (DEI)
                 </AccordionHeader>
-                <AccordionBody className='pt-8 text-md'>
+                <AccordionBody className='pt-4 text-md'>
                     The property industry is aware of the need to diversify its demographic.
                     As a gay person of colour from a socially mobile background, I believe visibility is fundamental to redefining what a surveyor looks like and comes from.
                     Empathy is key in addressing inequality.

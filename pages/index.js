@@ -6,6 +6,7 @@ import Container from "@/components/Container";
 import { HeroContent } from "../content/homeContent"
 import { FadeInWhenVisible } from "@/components/ScrollAnimations";
 import AnimatedAccordion from "@/components/Accordion";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -37,8 +38,9 @@ export default function Home() {
         <main className='flex items-center justify-center w-full bg-secondary_light'>
           <Container>
             <Layout>
-              <div className='flex flex-col items-center justify-center w-full gap-12'>
+              <div className='flex flex-col items-end justify-center w-full gap-12'>
                 <AnimatedAccordion />
+                <Link href={'/podcast'} className='p-4 bg-light text-purple-700 border-solid border-2 border-purple-700 shadow-[5px_5px_0px_0px_rgba(109,40,217)]' >More at Podcasts</Link>
               </div>
             </Layout>
           </Container>
