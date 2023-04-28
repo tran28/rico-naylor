@@ -131,7 +131,7 @@ const NavBar = () => {
                     variants={navVariants}
                     initial='hidden'
                     animate='show'
-                    className='z-30 min-w-[70vw] min-h-[70vh] flex flex-col justify-center items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary_light shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]'>
+                    className='z-30 min-w-[70vw] min-h-[50vh] flex flex-col justify-center items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary_light shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]'>
                     <div className='flex flex-col items-center my-10'>
                         {NavMenu.items.map((item, index) => {
                             return (
