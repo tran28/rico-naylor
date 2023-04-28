@@ -39,6 +39,7 @@ export default function Home() {
           <Container>
             <Layout>
               <div className='flex flex-col items-end justify-center w-full gap-12'>
+                <h1 className='self-start font-bold text-3xl text-purple-700'>Content Pillars</h1>
                 <AnimatedAccordion />
                 <Link href={'/podcast'} className='p-4 bg-light text-purple-700 border-solid border-2 border-purple-700 shadow-[5px_5px_0px_0px_rgba(109,40,217)]' >More at Podcasts</Link>
               </div>
