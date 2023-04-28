@@ -143,20 +143,24 @@ const NavBar = () => {
                         <motion.button
                             intial={{ opacity: 0.8, backgroundColor: mode === 'dark' ? '#fed7aa' : '#ddd6fe' }}
                             animate={{ opacity: 1, backgroundColor: mode === 'dark' ? '#ddd6fe' : '#fed7aa', transition: { ease: 'easeInOut', duration: 0.6 } }}
-                            className={`flex flex-row w-12 rounded-3xl ${mode === 'dark' ? 'justify-end' : 'justify-start'}`}
+                            className={`grid grid-cols-2 rounded-3xl`}
                             onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
                         >
                             {mode === 'dark' && (
-                                <motion.div initial={{ opacity: 0.8, x: -20 }} animate={{ opacity: 1, x: 0, transition: { ease: 'easeInOut', duration: 0.6 } }} className={`bg-purple-100 border-[1px] border-purple-700 rounded-full`}>
-                                    <Moon
-                                        className='w-full h-auto p-1'
-                                        size={16}
-                                        strokeWidth={1.5}
-                                        color={'#7E22CE'}
-                                    />
-                                </motion.div>)}
+                                <>
+                                    <div className='col-span-1 order-1'></div>
+                                    <motion.div initial={{ opacity: 0.8, x: -20 }} animate={{ opacity: 1, x: 0, transition: { ease: 'easeInOut', duration: 0.6 } }} className={`bg-purple-100 border-[1px] border-purple-700 rounded-full col-span-1 order-2`}>
+                                        <Moon
+                                            className='w-full h-auto p-1'
+                                            size={16}
+                                            strokeWidth={1.5}
+                                            color={'#7E22CE'}
+                                        />
+                                    </motion.div>
+                                </>
+                            )}
                             {mode === 'light' && (
-                                <motion.div initial={{ opacity: 0.8, x: 20 }} animate={{ opacity: 1, x: 0, transition: { ease: 'easeInOut', duration: 0.6 } }} className={`bg-orange-100 border-[1px] border-orange-700 rounded-full`}>
+                                <motion.div initial={{ opacity: 0.8, x: 20 }} animate={{ opacity: 1, x: 0, transition: { ease: 'easeInOut', duration: 0.6 } }} className={`bg-orange-100 border-[1px] border-orange-700 rounded-full col-span-1 order-1`}>
                                     <Sun
                                         className='w-full h-auto p-1'
                                         size={16}
