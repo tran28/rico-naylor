@@ -29,7 +29,7 @@ export default function About() {
                                 })
                                 }
                             </div>
-                            <div className='col-span-3 relative h-max xl:col-span-4 md:order-1 md:col-span-8 md:px-24 sm:p-8'>
+                            <div className='col-span-3 relative h-max xl:col-span-4 md:order-1 md:col-span-8 md:px-24 sm:px-8 sm:pb-8'>
                                 <AnimatedImage src={AboutContent.image} alt='Rico Naylor' className='w-full h-auto rounded-full shadow-xl' direction='100'></AnimatedImage>
                             </div>
                         </div>
