@@ -140,7 +140,7 @@ const NavBar = () => {
                         />
                     </motion.a>
                     <button
-                        className={`flex w-[50px] rounded-3xl ${mode === 'dark' ? 'justify-end bg-gradient-to-r from-purple-200' : 'justify-start bg-gradient-to-l from-orange-200'}`}
+                        className={`flex w-[50px] rounded-3xl ${mode === 'dark' ? 'justify-end bg-purple-200' : 'justify-start bg-orange-200'}`}
                         onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
                     >
                         {mode === 'dark' ?

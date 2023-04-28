@@ -37,7 +37,7 @@ export default function About() {
                     </Layout>
                 </Container>
             </main>
-            <main className='flex w-full flex-col justify-center items-center bg-secondary_light'>
+            <main className='flex w-full flex-col justify-center items-center bg-secondary_light dark:bg-secondary_dark'>
                 <Container>
                     <Layout>
 
