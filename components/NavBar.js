@@ -140,13 +140,13 @@ const NavBar = () => {
                         />
                     </motion.a>
                     <motion.button
-                        intial={{ backgroundColor: mode === 'dark' ? '#fed7aa' : '#ddd6fe' }}
-                        animate={{ backgroundColor: mode === 'dark' ? '#ddd6fe' : '#fed7aa' }}
-                        className={`flex w-12 rounded-3xl ${mode === 'dark' ? 'justify-end' : 'justify-start'}`}
+                        intial={{ opacity: 0.8, backgroundColor: mode === 'dark' ? '#fed7aa' : '#ddd6fe' }}
+                        animate={{ opacity: 1, backgroundColor: mode === 'dark' ? '#ddd6fe' : '#fed7aa', transition: { ease: 'easeInOut', duration: 0.6 } }}
+                        className={`flex flex-row w-12 rounded-3xl ${mode === 'dark' ? 'justify-end' : 'justify-start'}`}
                         onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
                     >
                         {mode === 'dark' && (
-                            <motion.div initial={{ x: -20 }} animate={{ x: 0, transition: { ease: 'easeInOut', duration: 0.2 } }} className={`bg-purple-100 border-[1px] border-purple-700 rounded-full`}>
+                            <motion.div initial={{ opacity: 0.8, x: -20 }} animate={{ opacity: 1, x: 0, transition: { ease: 'easeInOut', duration: 0.6 } }} className={`bg-purple-100 border-[1px] border-purple-700 rounded-full`}>
                                 <Moon
                                     className='w-full h-auto p-1'
                                     size={16}
@@ -155,7 +155,7 @@ const NavBar = () => {
                                 />
                             </motion.div>)}
                         {mode === 'light' && (
-                            <motion.div initial={{ x: 20 }} animate={{ x: 0, transition: { ease: 'easeInOut', duration: 0.2 } }} className={`bg-orange-100 border-[1px] border-orange-700 rounded-full`}>
+                            <motion.div initial={{ opacity: 0.8, x: 20 }} animate={{ opacity: 1, x: 0, transition: { ease: 'easeInOut', duration: 0.6 } }} className={`bg-orange-100 border-[1px] border-orange-700 rounded-full`}>
                                 <Sun
                                     className='w-full h-auto p-1'
                                     size={16}
