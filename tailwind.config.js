@@ -17,7 +17,7 @@ module.exports = {
       },
       colors: {
         light: '#FFFFFF',
-        secondary_light: '#F1F1F1',
+        secondary_light: '#F9FAFB',
         accent_light: '#7E22CE',
 
         dark: '#121212',
@@ -26,8 +26,16 @@ module.exports = {
 
         light_brown: '#8F6E5D',
         dark_brown: '#60574A'
-      }
+      },
     },
+    screens: {
+      '2xl': { max: '1535px' },
+      'xl': { max: '1279px' },
+      'lg': { max: '1023px' },
+      'md': { max: '767px' },
+      'sm': { max: '639px' },
+      'xs': { max: '479px' },
+    }
   },
   plugins: [],
 }

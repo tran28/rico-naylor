@@ -31,7 +31,7 @@ export default function AnimatedAccordion() {
     return (
         <>
             <Accordion open={open === 1} icon={<Icon id={1} open={open} />}>
-                <AccordionHeader onClick={() => handleOpen(1)} className='text-xl text-purple-700 font-semibold'>
+                <AccordionHeader onClick={() => handleOpen(1)} className='text-xl text-purple-700 font-semibold sm:text-base'>
                     Commercial Awareness
                 </AccordionHeader>
                 <AccordionBody className='pt-4 text-md'>
@@ -42,7 +42,7 @@ export default function AnimatedAccordion() {
                 </AccordionBody>
             </Accordion>
             <Accordion open={open === 2} icon={<Icon id={2} open={open} />}>
-                <AccordionHeader onClick={() => handleOpen(2)} className='text-xl text-purple-700 font-semibold'>
+                <AccordionHeader onClick={() => handleOpen(2)} className='text-xl text-purple-700 font-semibold sm:text-base'>
                     Career Development
                 </AccordionHeader>
                 <AccordionBody className='pt-4 text-md'>
@@ -52,7 +52,7 @@ export default function AnimatedAccordion() {
                 </AccordionBody>
             </Accordion>
             <Accordion open={open === 3} icon={<Icon id={3} open={open} />}>
-                <AccordionHeader onClick={() => handleOpen(3)} className='text-xl text-purple-700 font-semibold'>
+                <AccordionHeader onClick={() => handleOpen(3)} className='text-xl text-purple-700 font-semibold sm:text-base'>
                     Diversity, Equity & Inclusion (DEI)
                 </AccordionHeader>
                 <AccordionBody className='pt-4 text-md'>

@@ -15,10 +15,11 @@ const FooterLink = ({ href, title, className, selectedColor }) => {
 
 const Footer = () => {
     return (
-        <footer className={`${bebas_neue.variable} font-bebas w-full px-32 py-8 text-base flex items-center justify-between`}>
-            <span>© 2023 Rico & Assoc. All Rights Reserved.</span>
+        <footer className={`${bebas_neue.variable} font-bebas w-full px-32 py-8 text-base flex items-center justify-between md:flex-col`}>
+            <span className='px-1'>© 2023 All Rights Reserved</span>
+
             <div>
-                <nav>
+                <nav className='flex items-center md:flex-col'>
                     <FooterLink href='/terms' title='Terms of Use' className='mx-4' selectedColor='bg-dark' />
                     <FooterLink href='/privacy' title='Privacy Policy' className='mx-4' selectedColor='bg-dark' />
                 </nav>
