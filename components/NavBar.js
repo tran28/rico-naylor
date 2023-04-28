@@ -91,7 +91,7 @@ const NavBar = () => {
     const [isOpen, cycleOpen] = useCycle(false, true);
 
     return (
-        <header className={`${bebas_neue.variable} font-bebas w-full px-32 py-16 text-xl flex items-center justify-between relative xl:px-24 lg:px-20 md:px-16 sm:px-12`}>
+        <header className={`${bebas_neue.variable} font-bebas w-full px-32 py-12 text-xl flex items-center justify-between relative xl:px-24 lg:px-20 md:px-16 sm:px-12`}>
             <button className='hidden flex-col justify-center items-start z-40 lg:flex' onClick={cycleOpen}>
                 <span className={`bg-dark block h-0.5 transition-all duration-300 ease-out rounded-sm ${isOpen ? 'rotate-45 translate-y-1 w-8' : '-translate-y-1 w-4'}`}></span>
                 <span className={`bg-dark block h-0.5 transition-all duration-300 ease-out rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100 w-6'}`}></span>

@@ -17,9 +17,6 @@ export default function Contact() {
                     </Layout>
                 </Container>
             </main>
-            <section>
-                <div className='w-full h-[200px] bg-secondary_light'></div>
-            </section>
         </>
     )
 }

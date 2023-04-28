@@ -98,65 +98,67 @@ export default function ContactForm() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className='rounded-lg shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)] w-[400px]'>
-            <h1 className='text-2xl font-bold bg-purple-700 py-8 px-8 rounded-t-lg text-light'>Send a message</h1>
-            <div className='flex px-8 py-8 flex-col'>
-                <label htmlFor='fullname' className='text-gray-500 font-light'>
-                    Full name<span className='text-[#130F49] ml-1'>*</span>
-                </label>
-                <input type='text' value={fullname} onChange={(e) => { setFullname(e.target.value); }} name='fullname' className='border-b py-2 focus:outline-none focus:border-b-purple-700 text-[#130F49]' />
-                <AnimatePresence>
-                    {errors.fullname !== undefined ?
-                        <motion.div
-                            custom={10}
-                            variants={errorVariants}
-                            initial='hidden'
-                            animate='show'
-                            exit='exit'
-                            className='text-purple-700 italic text-sm'>Full Name cannot be empty.</motion.div>
-                        : null}
-                </AnimatePresence>
+        <form onSubmit={handleSubmit} className='shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]'>
+            <div className='grid grid-cols-8 sm:w-[80vw]'>
+                <h1 className='col-span-3 text-2xl font-bold bg-secondary_light py-8 px-8 text-purple-700 sm:text-xl sm:col-span-8'>Send a message</h1>
+                <div className='col-span-5 flex px-8 py-8 flex-col sm:col-span-8'>
+                    <label htmlFor='fullname' className='text-gray-500 font-light'>
+                        Full name<span className='text-[#130F49] ml-1'>*</span>
+                    </label>
+                    <input type='text' value={fullname} onChange={(e) => { setFullname(e.target.value); }} name='fullname' className='border-b py-2 focus:outline-none focus:border-b-purple-700 text-[#130F49]' />
+                    <AnimatePresence>
+                        {errors.fullname !== undefined ?
+                            <motion.div
+                                custom={10}
+                                variants={errorVariants}
+                                initial='hidden'
+                                animate='show'
+                                exit='exit'
+                                className='text-purple-700 italic text-sm'>Full Name cannot be empty.</motion.div>
+                            : null}
+                    </AnimatePresence>
 
-                <label htmlFor='email' className='text-gray-500 font-light mt-4'>E-mail</label>
-                <input type='email' name='email' value={email} onChange={(e) => { setEmail(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49]' />
+                    <label htmlFor='email' className='text-gray-500 font-light mt-4'>E-mail</label>
+                    <input type='email' name='email' value={email} onChange={(e) => { setEmail(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49]' />
 
-                <label htmlFor='subject' className='text-gray-500 font-light mt-4'>
-                    Subject<span className='text-[#130F49] ml-1'>*</span>
-                </label>
-                <input type='text' name='subject' value={subject} onChange={(e) => { setSubject(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49]' />
-                <AnimatePresence>
-                    {errors.subject !== undefined ?
-                        <motion.div
-                            custom={10}
-                            variants={errorVariants}
-                            initial='hidden'
-                            animate='show'
-                            exit='exit'
-                            className='text-purple-700 italic text-sm'>Subject cannot be empty.</motion.div>
-                        : null}
-                </AnimatePresence>
+                    <label htmlFor='subject' className='text-gray-500 font-light mt-4'>
+                        Subject<span className='text-[#130F49] ml-1'>*</span>
+                    </label>
+                    <input type='text' name='subject' value={subject} onChange={(e) => { setSubject(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49]' />
+                    <AnimatePresence>
+                        {errors.subject !== undefined ?
+                            <motion.div
+                                custom={10}
+                                variants={errorVariants}
+                                initial='hidden'
+                                animate='show'
+                                exit='exit'
+                                className='text-purple-700 italic text-sm'>Subject cannot be empty.</motion.div>
+                            : null}
+                    </AnimatePresence>
 
-                <label htmlFor='message' className='text-gray-500 font-light mt-4'>
-                    Message<span className='text-[#130F49] ml-1'>*</span>
-                </label>
-                <textarea name='message' value={message} onChange={(e) => { setMessage(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49]'></textarea>
-                <AnimatePresence>
-                    {errors.message !== undefined ?
-                        <motion.div
-                            custom={10}
-                            variants={errorVariants}
-                            initial='hidden'
-                            animate='show'
-                            exit='exit'
-                            className='text-purple-700 italic text-sm'>Message cannot be empty.</motion.div>
-                        : null}
-                </AnimatePresence>
+                    <label htmlFor='message' className='text-gray-500 font-light mt-4'>
+                        Message<span className='text-[#130F49] ml-1'>*</span>
+                    </label>
+                    <textarea name='message' value={message} onChange={(e) => { setMessage(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49]'></textarea>
+                    <AnimatePresence>
+                        {errors.message !== undefined ?
+                            <motion.div
+                                custom={10}
+                                variants={errorVariants}
+                                initial='hidden'
+                                animate='show'
+                                exit='exit'
+                                className='text-purple-700 italic text-sm'>Message cannot be empty.</motion.div>
+                            : null}
+                    </AnimatePresence>
 
-                <div className='flex flex-row items-center justify-start'>
-                    <button
-                        type='submit'
-                        disabled={disable}
-                        className={`px-10 ${bttnBg} mt-8 py-2 text-light rounded-md text-lg flex flex-row items-center`}>{buttonText}</button>
+                    <div className='flex flex-row items-center justify-start'>
+                        <button
+                            type='submit'
+                            disabled={disable}
+                            className={`px-10 ${bttnBg} mt-8 py-2 text-light rounded-md text-lg flex flex-row items-center`}>{buttonText}</button>
+                    </div>
                 </div>
             </div>
         </form>
