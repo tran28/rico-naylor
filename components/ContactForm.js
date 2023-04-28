@@ -98,8 +98,8 @@ export default function ContactForm() {
     };
 
     return (
-        <form onSubmit={handleSubmit} className='shadow-[2px_2px_0px_0px_rgba(126,34,205)] border-purple-700'>
-            <div className='grid grid-cols-8 sm:w-[80vw]'>
+        <form onSubmit={handleSubmit} className=''>
+            <div className='grid grid-cols-8 border-4 border-secondary_light sm:w-[80vw]'>
                 <h1 className='col-span-3 text-2xl font-bold bg-secondary_light py-8 px-8 text-purple-700 sm:text-xl sm:col-span-8'>Send a message</h1>
                 <div className='col-span-5 flex px-8 py-8 flex-col sm:col-span-8'>
                     <label htmlFor='fullname' className='text-gray-500 font-light'>
