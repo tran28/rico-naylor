@@ -4,11 +4,11 @@ import Image from "next/image";
 const imageVariants = {
     hidden: (direction) => ({
         opacity: 0,
-        x: direction
+        y: direction
     }),
     show: {
         opacity: 1,
-        x: 0,
+        y: 0,
         transition: {
             ease: 'easeInOut',
             duration: 1.6
