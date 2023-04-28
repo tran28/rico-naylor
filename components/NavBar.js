@@ -139,7 +139,7 @@ const NavBar = () => {
                             color={'#C71610'}
                         />
                     </motion.a>
-                    <div className='flex'>
+                    <div className='flex pl-1'>
                         <motion.button
                             intial={{ opacity: 0.8, backgroundColor: mode === 'dark' ? '#fed7aa' : '#ddd6fe' }}
                             animate={{ opacity: 1, backgroundColor: mode === 'dark' ? '#ddd6fe' : '#fed7aa', transition: { ease: 'easeInOut', duration: 0.6 } }}
