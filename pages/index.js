@@ -20,7 +20,7 @@ export default function Home() {
           <Layout className='lg:pt-0'>
             <div className='flex items-center justify-between w-full gap-24 lg:flex-col lg:gap-0'>
               <div className='w-1/2 lg:py-10 sm:w-[90%]'>
-                <AnimatedImage src={HeroContent.image} alt='Rico Naylor' className='w-full h-auto rounded-xl shadow-xl' direction='-100'></AnimatedImage>
+                <AnimatedImage src={HeroContent.image} alt='Rico Naylor' className='w-full h-auto rounded-xl shadow-xl' direction='0'></AnimatedImage>
               </div>
               <div className='w-1/2 flex flex-col items-center self-center gap-6 lg:w-full lg:text-center'>
                 <AnimatedText text={HeroContent.heading} className='!text-6xl xl:!text-5xl lg:!text-center lg:!text-5xl md:!text-5xl sm:!text-3xl' />
