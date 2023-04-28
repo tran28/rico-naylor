@@ -172,14 +172,14 @@ const NavBar = () => {
                         animate="open"
                         variants={sideVariants}
                         className='z-30 min-w-[100vw] min-h-[100vh] flex flex-col justify-center items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary_light dark:bg-secondary_dark shadow-[-10px_-10px_30px_4px_rgba(0,0,0,0.1),_10px_10px_30px_4px_rgba(45,78,255,0.15)]'>
-                        <motion.div className='flex flex-col items-center my-6'>
+                        <motion.div className='flex flex-col items-center justify-around h-[24vh]'>
                             {NavMenu.items.map((item, index) => {
                                 return (
                                     <CustomMobileLink 
                                     key={`${item}-${index}`} 
                                     href={item.href} 
                                     title={item.title} 
-                                    className='mx-4 my-2 text-2xl' 
+                                    className='text-2xl' 
                                     selectedColor={item.selectedColor} 
                                     variants={itemVariants} 
                                     onClick={cycleOpen}
@@ -188,7 +188,7 @@ const NavBar = () => {
                             })}
                         </motion.div>
 
-                        <motion.nav className='flex items-center justify-center'>
+                        <motion.nav className='flex items-center justify-center my-6'>
                             <motion.a
                                 href='https://www.linkedin.com/in/riconaylor/'
                                 target={'_blank'}
@@ -217,29 +217,6 @@ const NavBar = () => {
                                     color={'#C71610'}
                                 />
                             </motion.a>
-                            <button
-                                className={`flex w-[50px] rounded-3xl ${mode === 'dark' ? 'justify-end bg-gradient-to-r from-purple-200' : 'justify-start bg-gradient-to-l from-orange-200'}`}
-                                onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-                            >
-                                {mode === 'dark' ?
-                                    <div className={`bg-purple-200 rounded-full`}>
-                                        <Moon
-                                            className='w-full h-auto p-1'
-                                            size={20}
-                                            strokeWidth={1.5}
-                                            color={'#7e22ce'}
-                                        />
-                                    </div>
-                                    :
-                                    <div className={`bg-orange-200 rounded-full`}>
-                                        <Sun
-                                            className='w-full h-auto p-1'
-                                            size={20}
-                                            strokeWidth={1.5}
-                                            color={'#c2410c'}
-                                        />
-                                    </div>}
-                            </button>
                         </motion.nav >
                     </motion.nav>
                 </motion.aside>
