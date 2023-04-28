@@ -14,7 +14,7 @@ const Terms = () => {
                 <meta name='description' content='Terms of use for riconaylor.com' />
             </Head>
             <ScrollLinkedAnimation />
-            <main className='flex items-center justify-center text-dark w-full min-h-screen'>
+            <main className='flex items-center justify-center w-full min-h-screen'>
                 <Container >
                     <Layout className='pt-0'>
                         {TermsContent.map(({ title, text }, index) => {

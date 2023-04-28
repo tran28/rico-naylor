@@ -14,7 +14,7 @@ const Privacy = () => {
         <meta name='description' content='Privacy policy for riconaylor.com' />
       </Head>
       <ScrollLinkedAnimation />
-      <main className='flex items-center justify-center text-dark w-full min-h-screen'>
+      <main className='flex items-center justify-center w-full min-h-screen'>
         <Container>
           <Layout className='pt-0'>
             {PrivacyContent.map(({ title, text }, index) => {
