@@ -8,6 +8,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
     './app/**/*.{js,ts,jsx,tsx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -21,8 +22,8 @@ module.exports = {
         accent_light: '#7E22CE',
 
         dark: '#121212',
-        secondary_dark: '#393226',
-        accent_dark: '#95A991',
+        secondary_dark: '#1F1F1F',
+        accent_dark: '#E9D5FF',
 
         light_brown: '#8F6E5D',
         dark_brown: '#60574A'

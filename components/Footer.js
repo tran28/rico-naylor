@@ -16,7 +16,7 @@ const FooterLink = ({ href, title, className, selectedColor }) => {
 const Footer = () => {
     return (
         <footer className={`${bebas_neue.variable} font-bebas w-full px-32 py-8 text-base flex items-center justify-between xl:px-24 lg:px-16 md:flex-col`}>
-            <span className='px-1 text-dark/60 md:pb-4'>© 2023 All Rights Reserved</span>
+            <span className='px-1 text-dark/60 dark:text-white/60 md:pb-4'>© 2023 All Rights Reserved</span>
 
             <div>
                 <nav className='flex items-center md:flex-col'>

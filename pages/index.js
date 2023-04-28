@@ -35,13 +35,13 @@ export default function Home() {
         </Container>
       </main>
       <FadeInWhenVisible>
-        <main className='flex items-center justify-center w-full bg-secondary_light sm:py-8'>
+        <main className='flex items-center justify-center w-full bg-secondary_light dark:bg-secondary_dark sm:py-8'>
           <Container>
             <Layout>
               <div className='flex flex-col items-end justify-center w-full gap-12'>
-                <h1 className='self-start font-bold text-3xl text-dark'>Content Pillars</h1>
+                <h1 className='self-start font-bold text-3xl'>Content Pillars</h1>
                 <AnimatedAccordion />
-                <Link href={'/podcast'} className='p-4 bg-light text-dark border-solid border-2 border-dark shadow-[5px_5px_0px_0px_rgba(18,18,18)]' >More at Podcasts</Link>
+                <Link href={'/podcast'} className='p-4 bg-light text-dark border-solid border-2 border-dark shadow-[5px_5px_0px_0px_rgba(18,18,18)] dark:text-purple-700 dark:border-light dark:shadow-[0px_0px_0px_0px_rgba(244,244,244)]'>More at Podcasts</Link>
               </div>
             </Layout>
           </Container>

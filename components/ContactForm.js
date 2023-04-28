@@ -99,13 +99,13 @@ export default function ContactForm() {
 
     return (
         <form onSubmit={handleSubmit} className=''>
-            <div className='grid grid-cols-8 border-4 border-secondary_light sm:w-[80vw]'>
-                <h1 className='col-span-3 text-2xl font-bold bg-secondary_light py-8 px-8 text-purple-700 sm:text-xl sm:col-span-8'>Send a message</h1>
-                <div className='col-span-5 flex px-8 py-8 flex-col sm:col-span-8'>
-                    <label htmlFor='fullname' className='text-gray-500 font-light'>
+            <div className='grid grid-cols-8 border-4 border-secondary_light dark:border-accent_dark sm:w-[80vw]'>
+                <h1 className='col-span-3 text-2xl font-bold bg-secondary_light dark:bg-accent_dark py-8 px-8 text-purple-700 sm:text-xl sm:col-span-8'>Send a message</h1>
+                <div className='col-span-5 flex px-8 py-8 flex-col sm:col-span-8 bg-light'>
+                    <label htmlFor='fullname' className='text-gray-500 font-light dark:text-purple-700'>
                         Full name<span className='text-[#130F49] ml-1'>*</span>
                     </label>
-                    <input type='text' value={fullname} onChange={(e) => { setFullname(e.target.value); }} name='fullname' className='border-b py-2 focus:outline-none focus:border-b-purple-700 text-[#130F49]' />
+                    <input type='text' value={fullname} onChange={(e) => { setFullname(e.target.value); }} name='fullname' className='border-b py-2 focus:outline-none focus:border-b-purple-700 text-[#130F49] dark:bg-accent_dark dark:px-3' />
                     <AnimatePresence>
                         {errors.fullname !== undefined ?
                             <motion.div
@@ -118,13 +118,13 @@ export default function ContactForm() {
                             : null}
                     </AnimatePresence>
 
-                    <label htmlFor='email' className='text-gray-500 font-light mt-4'>E-mail</label>
-                    <input type='email' name='email' value={email} onChange={(e) => { setEmail(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49]' />
+                    <label htmlFor='email' className='text-gray-500 font-light mt-4 dark:text-purple-700'>E-mail</label>
+                    <input type='email' name='email' value={email} onChange={(e) => { setEmail(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49] dark:bg-accent_dark dark:px-3' />
 
-                    <label htmlFor='subject' className='text-gray-500 font-light mt-4'>
+                    <label htmlFor='subject' className='text-gray-500 font-light mt-4 dark:text-purple-700'>
                         Subject<span className='text-[#130F49] ml-1'>*</span>
                     </label>
-                    <input type='text' name='subject' value={subject} onChange={(e) => { setSubject(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49]' />
+                    <input type='text' name='subject' value={subject} onChange={(e) => { setSubject(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49] dark:bg-accent_dark dark:px-3' />
                     <AnimatePresence>
                         {errors.subject !== undefined ?
                             <motion.div
@@ -137,10 +137,10 @@ export default function ContactForm() {
                             : null}
                     </AnimatePresence>
 
-                    <label htmlFor='message' className='text-gray-500 font-light mt-4'>
+                    <label htmlFor='message' className='text-gray-500 font-light mt-4 dark:text-purple-700'>
                         Message<span className='text-[#130F49] ml-1'>*</span>
                     </label>
-                    <textarea name='message' value={message} onChange={(e) => { setMessage(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49]'></textarea>
+                    <textarea name='message' value={message} onChange={(e) => { setMessage(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49] dark:bg-accent_dark dark:px-3'></textarea>
                     <AnimatePresence>
                         {errors.message !== undefined ?
                             <motion.div
