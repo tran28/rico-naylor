@@ -141,7 +141,7 @@ const NavBar = () => {
                             />
                         </motion.a>
                     </div>
-                    <motion.div className='grid grid-cols-2 cursor-pointer rounded-3xl col-span-1 m-4'
+                    <motion.div className='grid grid-cols-2 cursor-pointer rounded-3xl col-span-1 mx-2'
                         intial={{ backgroundColor: mode === 'dark' ? '#fed7aa' : '#ddd6fe' }}
                         animate={{ backgroundColor: mode === 'dark' ? '#ddd6fe' : '#fed7aa' }}
                         onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
@@ -149,7 +149,7 @@ const NavBar = () => {
                         {mode === 'dark' && (
                             <>
                                 <div className='col-span-1 order-1'></div>
-                                <motion.div initial={{ opacity: 0.8, x: -20 }} animate={{ opacity: 1, x: 0, transition: { ease: 'easeInOut', duration: 0.6 } }} className={`bg-purple-100 border-[1px] border-purple-700 col-span-1 order-2 rounded-full p-1`}>
+                                <motion.div initial={{ opacity: 0.8, x: -20 }} animate={{ opacity: 1, x: 0, transition: { ease: 'easeInOut', duration: 0.6 } }} className={`bg-purple-100 border-[1px] border-purple-700 col-span-1 order-2 rounded-full p-1 m-1`}>
                                     <Moon
                                         size={20}
                                         strokeWidth={1.5}
@@ -159,7 +159,7 @@ const NavBar = () => {
                             </>
                         )}
                         {mode === 'light' && (
-                            <motion.div initial={{ opacity: 0.8, x: 20 }} animate={{ opacity: 1, x: 0, transition: { ease: 'easeInOut', duration: 0.6 } }} className={`bg-orange-100 border-[1px] border-orange-700 col-span-1 order-1 rounded-full p-1`}>
+                            <motion.div initial={{ opacity: 0.8, x: 20 }} animate={{ opacity: 1, x: 0, transition: { ease: 'easeInOut', duration: 0.6 } }} className={`bg-orange-100 border-[1px] border-orange-700 col-span-1 order-1 rounded-full p-1 m-1`}>
                                 <Sun
                                     size={20}
                                     strokeWidth={1.5}
