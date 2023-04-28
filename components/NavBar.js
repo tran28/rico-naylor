@@ -139,11 +139,12 @@ const NavBar = () => {
                             color={'#C71610'}
                         />
                     </motion.a>
-                    <div className='flex pl-1'>
-                        <motion.button
-                            intial={{ backgroundColor: mode === 'dark' ? '#fed7aa' : '#ddd6fe' }}
-                            animate={{ backgroundColor: mode === 'dark' ? '#ddd6fe' : '#fed7aa' }}
-                            className={`grid grid-cols-2 rounded-3xl`}
+                    <motion.div
+                        intial={{ backgroundColor: mode === 'dark' ? '#fed7aa' : '#ddd6fe' }}
+                        animate={{ backgroundColor: mode === 'dark' ? '#ddd6fe' : '#fed7aa' }}
+                        className='rounded-3xl'>
+                        <div
+                            className='grid grid-cols-2 cursor-pointer'
                             onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
                         >
                             {mode === 'dark' && (
@@ -169,8 +170,8 @@ const NavBar = () => {
                                     />
                                 </motion.div>
                             )}
-                        </motion.button>
-                    </div>
+                        </div>
+                    </motion.div>
                 </nav >
             </nav>
 
