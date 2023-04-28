@@ -139,29 +139,32 @@ const NavBar = () => {
                             color={'#C71610'}
                         />
                     </motion.a>
-                    <button
-                        className={`flex w-12 rounded-3xl ${mode === 'dark' ? 'justify-end bg-purple-200' : 'justify-start bg-orange-200'}`}
+                    <motion.button
+                        intial={{ backgroundColor: mode === 'dark' ? '#fed7aa' : '#ddd6fe' }}
+                        animate={{ backgroundColor: mode === 'dark' ? '#ddd6fe' : '#fed7aa' }}
+                        className={`flex w-12 rounded-3xl ${mode === 'dark' ? 'justify-end' : 'justify-start'}`}
                         onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
                     >
-                        {mode === 'dark' ?
-                            <div className={`bg-purple-100 border-[1px] border-purple-700 rounded-full`}>
+                        {mode === 'dark' && (
+                            <motion.div initial={{ x: -20 }} animate={{ x: 0, transition: { ease: 'easeInOut', duration: 0.2 } }} className={`bg-purple-100 border-[1px] border-purple-700 rounded-full`}>
                                 <Moon
                                     className='w-full h-auto p-1'
                                     size={16}
                                     strokeWidth={1.5}
                                     color={'#7E22CE'}
                                 />
-                            </div>
-                            :
-                            <div className={`bg-orange-100 border-[1px] border-orange-700 rounded-full`}>
+                            </motion.div>)}
+                        {mode === 'light' && (
+                            <motion.div initial={{ x: 20 }} animate={{ x: 0, transition: { ease: 'easeInOut', duration: 0.2 } }} className={`bg-orange-100 border-[1px] border-orange-700 rounded-full`}>
                                 <Sun
                                     className='w-full h-auto p-1'
                                     size={16}
                                     strokeWidth={1.5}
                                     color={'#C2410C'}
                                 />
-                            </div>}
-                    </button>
+                            </motion.div>
+                        )}
+                    </motion.button>
                 </nav >
             </nav>
 
@@ -175,14 +178,14 @@ const NavBar = () => {
                         <motion.div className='flex flex-col items-center justify-around h-[24vh]'>
                             {NavMenu.items.map((item, index) => {
                                 return (
-                                    <CustomMobileLink 
-                                    key={`${item}-${index}`} 
-                                    href={item.href} 
-                                    title={item.title} 
-                                    className='text-2xl' 
-                                    selectedColor={item.selectedColor} 
-                                    variants={itemVariants} 
-                                    onClick={cycleOpen}
+                                    <CustomMobileLink
+                                        key={`${item}-${index}`}
+                                        href={item.href}
+                                        title={item.title}
+                                        className='text-2xl'
+                                        selectedColor={item.selectedColor}
+                                        variants={itemVariants}
+                                        onClick={cycleOpen}
                                     />
                                 )
                             })}
