@@ -141,8 +141,8 @@ const NavBar = () => {
                     </motion.a>
                     <div className='flex pl-1'>
                         <motion.button
-                            intial={{ opacity: 0.8, backgroundColor: mode === 'dark' ? '#fed7aa' : '#ddd6fe' }}
-                            animate={{ opacity: 1, backgroundColor: mode === 'dark' ? '#ddd6fe' : '#fed7aa', transition: { ease: 'easeInOut', duration: 0.6 } }}
+                            intial={{ backgroundColor: mode === 'dark' ? '#fed7aa' : '#ddd6fe' }}
+                            animate={{ backgroundColor: mode === 'dark' ? '#ddd6fe' : '#fed7aa' }}
                             className={`grid grid-cols-2 rounded-3xl`}
                             onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
                         >
