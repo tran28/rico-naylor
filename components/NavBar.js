@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import { bebas_neue } from "@/public/myfonts";
 import { BrandLinkedin, Mail } from "tabler-icons-react";
 import { motion, useCycle } from "framer-motion";
-import { useState } from "react";
 
 const NavMenu = {
     items: [
@@ -65,7 +64,10 @@ const itemVariants = {
 const CustomLink = ({ href, title, className, selectedColor }) => {
     const router = useRouter()
     return (
-        <Link href={href} className={`${className} relative py-0.5 group`}>
+        <Link
+            href={href}
+            className={`${className} relative py-0.5 group`}
+        >
             {title}
             <span className={`h-[3px] rounded inline-block w-0 ${selectedColor} absolute left-0 bottom-0 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === href ? 'w-full' : 'w-0'}`}>&nbsp;</span>
         </Link>
@@ -74,7 +76,6 @@ const CustomLink = ({ href, title, className, selectedColor }) => {
 
 const CustomMobileLink = ({ href, title, className, selectedColor, variants }) => {
     const router = useRouter()
-
     return (
         <motion.a
             href={href}
