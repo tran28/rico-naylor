@@ -140,25 +140,25 @@ const NavBar = () => {
                         />
                     </motion.a>
                     <button
-                        className={`flex w-[50px] rounded-3xl ${mode === 'dark' ? 'justify-end bg-purple-200' : 'justify-start bg-orange-200'}`}
+                        className={`flex w-12 rounded-3xl ${mode === 'dark' ? 'justify-end bg-purple-200' : 'justify-start bg-orange-200'}`}
                         onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
                     >
                         {mode === 'dark' ?
-                            <div className={`bg-purple-200 rounded-full`}>
+                            <div className={`bg-purple-100 border-[1px] border-purple-700 rounded-full`}>
                                 <Moon
                                     className='w-full h-auto p-1'
-                                    size={20}
+                                    size={16}
                                     strokeWidth={1.5}
-                                    color={'#7e22ce'}
+                                    color={'#7E22CE'}
                                 />
                             </div>
                             :
-                            <div className={`bg-orange-200 rounded-full`}>
+                            <div className={`bg-orange-100 border-[1px] border-orange-700 rounded-full`}>
                                 <Sun
                                     className='w-full h-auto p-1'
-                                    size={20}
+                                    size={16}
                                     strokeWidth={1.5}
-                                    color={'#c2410c'}
+                                    color={'#C2410C'}
                                 />
                             </div>}
                     </button>
