@@ -113,64 +113,59 @@ const NavBar = () => {
                 </div>
 
                 <nav className='grid grid-cols-3 items-center'>
-                    <div className='flex col-span-1'></div>
-                    <div className='flex col-span-1'>
-                        <motion.a
-                            href='https://www.linkedin.com/in/riconaylor/'
-                            target={'_blank'}
-                            whileHover={{ y: -2, scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
-                            className='mx-1'
-                        >
-                            <BrandLinkedin
-                                size={38}
-                                strokeWidth={1.5}
-                                color={'#0077B5'}
-                            />
-                        </motion.a>
-                        <motion.a
-                            href='mailto:enquiries@riconaylor.com'
-                            target={'_blank'}
-                            whileHover={{ y: -2, scale: 1.1 }}
-                            whileTap={{ scale: 0.9 }}
-                            className='mx-1'
-                        >
-                            <Mail
-                                size={38}
-                                strokeWidth={1.5}
-                                color={'#C71610'}
-                            />
-                        </motion.a>
-                    </div>
-                    <div className='flex col-span-1'>
-                        <motion.div className='grid grid-cols-2 cursor-pointer rounded-3xl mx-2'
-                            intial={{ backgroundColor: mode === 'dark' ? '#fed7aa' : '#ddd6fe' }}
-                            animate={{ backgroundColor: mode === 'dark' ? '#ddd6fe' : '#fed7aa' }}
-                            onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
-                        >
-                            {mode === 'dark' && (
-                                <>
-                                    <div className='col-span-1 order-1'></div>
-                                    <motion.div initial={{ opacity: 0.8, x: -20 }} animate={{ opacity: 1, x: 0, transition: { ease: 'easeInOut', duration: 0.6 } }} className={`bg-purple-100 border-[1px] border-purple-700 col-span-1 order-2 rounded-full p-1 m-1`}>
-                                        <Moon
-                                            size={16}
-                                            strokeWidth={1.5}
-                                            color={'#7E22CE'}
-                                        />
-                                    </motion.div>
-                                </>
-                            )}
-                            {mode === 'light' && (
-                                <motion.div initial={{ opacity: 0.8, x: 20 }} animate={{ opacity: 1, x: 0, transition: { ease: 'easeInOut', duration: 0.6 } }} className={`bg-orange-100 border-[1px] border-orange-700 col-span-1 order-1 rounded-full p-1 m-1`}>
-                                    <Sun
+                    <motion.a
+                        href='https://www.linkedin.com/in/riconaylor/'
+                        target={'_blank'}
+                        whileHover={{ y: -2, scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className='col-span-1 justify-self-end'
+                    >
+                        <BrandLinkedin
+                            size={38}
+                            strokeWidth={1.5}
+                            color={'#0077B5'}
+                        />
+                    </motion.a>
+                    <motion.a
+                        href='mailto:enquiries@riconaylor.com'
+                        target={'_blank'}
+                        whileHover={{ y: -2, scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        className='col-span-1 justify-self-center'
+                    >
+                        <Mail
+                            size={38}
+                            strokeWidth={1.5}
+                            color={'#C71610'}
+                        />
+                    </motion.a>
+                    <motion.div className='grid grid-cols-2 cursor-pointer rounded-3xl col-span-1'
+                        intial={{ backgroundColor: mode === 'dark' ? '#fed7aa' : '#ddd6fe' }}
+                        animate={{ backgroundColor: mode === 'dark' ? '#ddd6fe' : '#fed7aa', transition: { ease: 'easeInOut', duration: 0.6 } }}
+                        onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
+                    >
+                        {mode === 'dark' && (
+                            <>
+                                <div className='col-span-1 order-1'></div>
+                                <motion.div initial={{ opacity: 0.8, x: -20 }} animate={{ opacity: 1, x: 0, transition: { ease: 'easeInOut', duration: 0.6 } }} className={`bg-purple-100 border-[1px] border-purple-700 col-span-1 order-2 rounded-full p-1 m-1`}>
+                                    <Moon
                                         size={16}
                                         strokeWidth={1.5}
-                                        color={'#C2410C'}
+                                        color={'#7E22CE'}
                                     />
                                 </motion.div>
-                            )}
-                        </motion.div>
-                    </div>
+                            </>
+                        )}
+                        {mode === 'light' && (
+                            <motion.div initial={{ opacity: 0.8, x: 20 }} animate={{ opacity: 1, x: 0, transition: { ease: 'easeInOut', duration: 0.6 } }} className={`bg-orange-100 border-[1px] border-orange-700 col-span-1 order-1 rounded-full p-1 m-1`}>
+                                <Sun
+                                    size={16}
+                                    strokeWidth={1.5}
+                                    color={'#C2410C'}
+                                />
+                            </motion.div>
+                        )}
+                    </motion.div>
                 </nav >
             </nav>
 
@@ -197,9 +192,8 @@ const NavBar = () => {
                             })}
                         </motion.div>
 
-                        <nav className='grid grid-cols-3 items-center'>
-                            <div className='flex col-span-3 my-2'></div>
-                            <div className='flex col-span-3 my-2'>
+                        <nav className='grid grid-cols-2 items-center'>
+                            <div className='flex col-span-1 my-10'>
                                 <motion.a
                                     href='https://www.linkedin.com/in/riconaylor/'
                                     target={'_blank'}
@@ -227,10 +221,10 @@ const NavBar = () => {
                                     />
                                 </motion.a>
                             </div>
-                            <div className='flex col-span-3 my-2'>
+                            <div className='flex col-span-1 my-10'>
                                 <motion.div className='grid grid-cols-2 cursor-pointer rounded-3xl mx-2'
                                     intial={{ backgroundColor: mode === 'dark' ? '#fed7aa' : '#ddd6fe' }}
-                                    animate={{ backgroundColor: mode === 'dark' ? '#ddd6fe' : '#fed7aa' }}
+                                    animate={{ backgroundColor: mode === 'dark' ? '#ddd6fe' : '#fed7aa', transition: { ease: 'easeInOut', duration: 0.6 } }}
                                     onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}
                                 >
                                     {mode === 'dark' && (
