@@ -22,7 +22,7 @@ module.exports = {
         accent_light: '#7E22CE',
 
         dark: '#121212',
-        secondary_dark: '#1F1F1F',
+        secondary_dark: '#181818',
         accent_dark: '#E9D5FF',
 
         light_brown: '#8F6E5D',

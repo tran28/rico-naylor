@@ -100,12 +100,12 @@ export default function ContactForm() {
     return (
         <form onSubmit={handleSubmit} className=''>
             <div className='grid grid-cols-8 border-4 border-secondary_light dark:border-secondary_dark sm:w-[80vw]'>
-                <h1 className='col-span-3 text-2xl font-bold bg-secondary_light dark:bg-secondary_dark py-8 px-8 text-purple-700 dark:text-light sm:text-xl sm:col-span-8'>Send a message</h1>
+                <h1 className='col-span-3 text-2xl font-bold bg-secondary_light dark:bg-secondary_dark py-8 px-8 text-purple-700 dark:text-purple-500 sm:text-xl sm:col-span-8'>Send a message</h1>
                 <div className='col-span-5 flex px-8 py-8 flex-col sm:col-span-8 bg-light dark:bg-dark'>
                     <label htmlFor='fullname' className='text-gray-500 font-light'>
                         Full name<span className='text-[#130F49] ml-1 dark:text-light'>*</span>
                     </label>
-                    <input type='text' value={fullname} onChange={(e) => { setFullname(e.target.value); }} name='fullname' className='border-b py-2 focus:outline-none focus:border-b-purple-700 text-[#130F49] dark:bg-dark dark:text-light' />
+                    <input type='text' value={fullname} onChange={(e) => { setFullname(e.target.value); }} name='fullname' className='border-b py-2 focus:outline-none focus:border-b-purple-700 text-[#130F49] dark:bg-dark dark:text-light dark:focus:border-b-purple-500' />
                     <AnimatePresence>
                         {errors.fullname !== undefined ?
                             <motion.div
@@ -119,12 +119,12 @@ export default function ContactForm() {
                     </AnimatePresence>
 
                     <label htmlFor='email' className='text-gray-500 font-light mt-4'>E-mail</label>
-                    <input type='email' name='email' value={email} onChange={(e) => { setEmail(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49] dark:bg-dark dark:text-light' />
+                    <input type='email' name='email' value={email} onChange={(e) => { setEmail(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49] dark:bg-dark dark:text-light dark:focus:border-b-purple-500' />
 
                     <label htmlFor='subject' className='text-gray-500 font-light mt-4'>
                         Subject<span className='text-[#130F49] ml-1 dark:text-light'>*</span>
                     </label>
-                    <input type='text' name='subject' value={subject} onChange={(e) => { setSubject(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49] dark:bg-dark dark:text-light' />
+                    <input type='text' name='subject' value={subject} onChange={(e) => { setSubject(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49] dark:bg-dark dark:text-light dark:focus:border-b-purple-500' />
                     <AnimatePresence>
                         {errors.subject !== undefined ?
                             <motion.div
@@ -140,7 +140,7 @@ export default function ContactForm() {
                     <label htmlFor='message' className='text-gray-500 font-light mt-4'>
                         Message<span className='text-[#130F49] ml-1 dark:text-light'>*</span>
                     </label>
-                    <textarea name='message' value={message} onChange={(e) => { setMessage(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49] dark:bg-dark dark:text-light'></textarea>
+                    <textarea name='message' value={message} onChange={(e) => { setMessage(e.target.value); }} className='border-b py-2 focus:outline-none focus:border-b-purple-700 font-light text-[#130F49] dark:bg-dark dark:text-light dark:focus:border-b-purple-500'></textarea>
                     <AnimatePresence>
                         {errors.message !== undefined ?
                             <motion.div
