@@ -4,7 +4,6 @@ import Head from "next/head";
 import { bebas_neue } from "@/public/myfonts";
 import { AboutContent } from "@/content/aboutContent";
 import Container from "@/components/Container";
-import Image from "next/image";
 import Experience from "@/components/Experience";
 import AnimatedImage from "@/components/AnimatedImage";
 import Education from "@/components/Education";
