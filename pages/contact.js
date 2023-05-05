@@ -7,7 +7,7 @@ export default function Contact() {
     return (
         <>
             <Head>
-                <title>About Rico Naylor</title>
+                <title>Contact | Rico Naylor</title>
                 <meta name='description' content='Rico Naylor contact form for feedback, partnerships, sponsors, and general enquiries.' />
             </Head>
             <main className='flex items-center justify-center'>

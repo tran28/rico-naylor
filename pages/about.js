@@ -11,7 +11,7 @@ export default function About() {
     return (
         <>
             <Head>
-                <title>About Rico Naylor</title>
+                <title>About | Rico Naylor</title>
                 <meta name='description' content='Rico Naylor about information.' />
             </Head>
             <main className='flex w-full flex-col justify-center items-center'>
