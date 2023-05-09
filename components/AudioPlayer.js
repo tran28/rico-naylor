@@ -72,7 +72,7 @@ const AudioPlayer = ({ isShown, src, playing, setPlaying, setPlayingEpisode }) =
   return (
     <>
       {isShown &&
-        <footer className='fixed w-full bottom-0 h-18 z-50 left-0'>
+        <footer className='fixed w-full bottom-0 h-20 z-50 left-0 sm:h-24'>
           <div className='flex w-full bg-purple-700 h-full items-center justify-center gap-5'>
             <audio ref={audioPlayer} src={src}></audio>
 
