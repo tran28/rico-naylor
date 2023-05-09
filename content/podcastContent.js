@@ -3,7 +3,7 @@ export const PodcastContent = [
         title: 'Lorem Ipsum',
         episode: 'xx',
         date: 'May 3, 2023',
-        url: 'https://storage.googleapis.com/riconaylor-website-bucket/matt.m4a'
+        url: 'https://storage.googleapis.com/riconaylor-website-bucket/matt2.m4a'
     },
     {
         title: 'Lorem Ipsum',
@@ -15,7 +15,7 @@ export const PodcastContent = [
         title: 'Lorem Ipsum',
         episode: 'xx',
         date: 'May 3, 2023',
-        url: 'https://storage.googleapis.com/riconaylor-website-bucket/matt.m4a'
+        url: 'https://storage.googleapis.com/riconaylor-website-bucket/matt2.m4a'
     },
     {
         title: 'Lorem Ipsum',
@@ -27,6 +27,6 @@ export const PodcastContent = [
         title: 'Lorem Ipsum',
         episode: 'xx',
         date: 'May 3, 2023',
-        url: 'https://storage.googleapis.com/riconaylor-website-bucket/matt.m4a'
+        url: 'https://storage.googleapis.com/riconaylor-website-bucket/matt2.m4a'
     },
 ]
