@@ -1,12 +1,15 @@
-import AudioPlayer from "@/components/AudioPlayer";
 import Container from "@/components/Container";
 import Episode from "@/components/Episode";
 import Layout from "@/components/Layout";
 import Podcatcher from "@/components/Podcatcher";
+import { PodcastContent } from "@/content/podcastContent";
 import Head from "next/head";
+import { useState } from "react";
 
 
 export default function Podcast() {
+    const [playingEpisodeIndex, setPlayingEpisodeIndex] = useState(null);
+
     return (
         <>
             <Head>
@@ -26,9 +29,6 @@ export default function Podcast() {
                                     <h3 className='text-lg'>A podcast about...</h3>
                                     <Podcatcher />
                                 </div>
-                                {/* <div className='flex col-span-3 bg-secondary_light dark:bg-secondary_dark lg:col-span-6'>
-                                    <div className='flex items-center justify-center w-full'>AUDIO</div>
-                                </div> */}
                             </div>
                         </div>
                     </Layout>
@@ -37,10 +37,20 @@ export default function Podcast() {
             <main className='flex items-center justify-center w-full bg-secondary_light dark:bg-secondary_dark'>
                 <Container>
                     <Layout>
-                        <Episode />
-                        <Episode />
-                        <Episode />
-                        <Episode />
+                        {PodcastContent.map((podcast, index) => {
+                            return (
+                                <Episode
+                                    key={`${podcast}-${index}`}
+                                    index={index}
+                                    playingEpisodeIndex={playingEpisodeIndex}
+                                    setPlayingEpisodeIndex={setPlayingEpisodeIndex}
+                                    title={podcast.title}
+                                    episode={podcast.episode}
+                                    date={podcast.date}
+                                    url={podcast.url}
+                                />
+                            )
+                        })}
                     </Layout>
                 </Container>
             </main>
