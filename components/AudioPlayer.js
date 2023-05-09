@@ -47,14 +47,12 @@ const AudioPlayer = ({ isShown, src, playing, setPlaying, setPlayingEpisode }) =
         console.log(progressBar.current.value)
       }
 
+      if(playing) {
+        setAudible(false)
+      }
+
       audioElement.addEventListener('loadedmetadata', handleMetadataLoaded)
       audioElement.addEventListener('timeupdate', handleTimeUpdate)
-
-      if (playing) {
-        audioElement.play()
-      } else {
-        audioElement.pause()
-      }
 
       return () => {
         audioElement.removeEventListener('loadedmetadata', handleMetadataLoaded)

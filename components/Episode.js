@@ -1,4 +1,4 @@
-import { PlayerPlay, X, ArrowBarRight } from 'tabler-icons-react';
+import { BrandApplePodcast, X, ArrowBarRight } from 'tabler-icons-react';
 import ReadMoreLess from './ReadMoreLess';
 import AudioPlayer from './AudioPlayer';
 import { useEffect, useState } from 'react';
@@ -27,7 +27,7 @@ const Episode = ({ index, playingEpisodeIndex, setPlayingEpisodeIndex, title, ep
                         <div className='p-4 rounded-full border-2 border-purple-700 dark:border-purple-500 cursor-pointer' onClick={handleClick}>
                             {playing ?
                                 <X size={48} strokeWidth={2} className=' stroke-purple-700 dark:stroke-purple-500 lg:max-h-[24px] lg:max-w-[24px]' /> :
-                                <PlayerPlay size={48} strokeWidth={0} className='fill-purple-700 dark:fill-purple-500 lg:max-h-[24px] lg:max-w-[24px]' />}
+                                <BrandApplePodcast size={48} strokeWidth={2} className='stroke-purple-700 dark:stroke-purple-500 lg:max-h-[24px] lg:max-w-[24px]' />}
                         </div>
                     </div>
                     <div className='flex items-center justify-start col-span-5 pt-10 pb-2 pr-10 lg:col-span-6 lg:order-1 lg:pl-10'>
