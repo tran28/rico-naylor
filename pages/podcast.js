@@ -48,6 +48,7 @@ export default function Podcast() {
                                     episode={podcast.episode}
                                     date={podcast.date}
                                     url={podcast.url}
+                                    text={podcast.text}
                                 />
                             )
                         })}

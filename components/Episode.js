@@ -3,7 +3,7 @@ import ReadMoreLess from './ReadMoreLess';
 import AudioPlayer from './AudioPlayer';
 import { useEffect, useState } from 'react';
 
-const Episode = ({ index, playingEpisodeIndex, setPlayingEpisodeIndex, title, episode, date, url }) => {
+const Episode = ({ index, playingEpisodeIndex, setPlayingEpisodeIndex, title, episode, date, url, text }) => {
     const [isShown, setIsShown] = useState(false)
     const [playing, setPlaying] = useState(false)
     const handleClick = (e) => {
@@ -35,7 +35,7 @@ const Episode = ({ index, playingEpisodeIndex, setPlayingEpisodeIndex, title, ep
                             <h3 className='text-lg'>{`Ep. ${episode}`}</h3>
                             <h2 className='text-2xl font-semibold text-purple-700 dark:text-purple-500'>{title}</h2>
                             <ReadMoreLess
-                                text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+                                text={text}
                                 limit={160}
                             />
                         </div>
