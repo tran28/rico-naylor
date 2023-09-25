@@ -10,7 +10,7 @@ export default function Maintenance({ setMaintenanceMode }) {
     const handleAccess = (e) => {
         e.preventDefault();
         const inputValue = inputRef.current.value;
-        if (inputValue === process.env.ADMIN_ACCESS_CODE) {
+        if (inputValue === process.env.NEXT_PUBLIC_ADMIN_ACCESS_CODE) {
             setMaintenanceMode(false);
         } else {
             inputRef.current.value = "";
